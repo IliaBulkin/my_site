@@ -1,0 +1,49 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(25,25,25);
+}
+
+header {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#logo {
+    position: absolute;
+    width: 175px;
+}
+
+#logo:hover {
+    animation: logo 0.3s ease-out;
+    width: 185px;
+}
+
+@keyframes logo{
+    0% {
+        width: 175px;
+    }
+    50% {
+        width: 180px;
+    }
+    100% {
+        width: 185px;
+    }
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    text-transform: uppercase;
+    transition: all 500ms ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+a:hover {
+    color: rgb(168, 168, 168);
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+}

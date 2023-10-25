@@ -1,0 +1,10 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block links %}
+    <link rel="stylesheet" href="{% static 'main_page/css/style.css' %}">
+{% endblock %}
+{% block content %}
+    <h1 id="text">Привет, ты попал на мой сайт!</h1>
+    <p id="text">Да это сайт Ильи Булкина, но пока у создателя нету идей, что можно о себе написать ¯\_(ツ)_/¯</p>
+    <img id='owner' src="{% static 'main_page/img/1.jpg' %}" alt="No image">
+{% endblock %}
